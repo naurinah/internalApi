@@ -194,7 +194,7 @@ export default function APITable({ reload, setReload }) {
   
  const fetchApiDetails = async () => {
     const response = await fetch(
-      "http://benefitx.blue-ex.com/api/customerportal/api_details.php"
+      "https://benefitx.blue-ex.com/api/customerportal/api_details.php"
     ).then((res) => res.json());
     setApis(response.details);
   };
